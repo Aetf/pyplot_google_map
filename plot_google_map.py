@@ -229,9 +229,6 @@ def plot_google_map(ax=None, height=640, width=640,
 
     uniImag = myTurboInterp2(lonMesh, latMesh, imag, uniLonMesh, uniLatMesh)
 
-    import pickle
-    with open('/tmp/workspace/objs.pickle', 'wb') as f:  # Python 3: open(..., 'wb')
-        pickle.dump([imag, uniImag], f)
     if plotMode:  # plot map
         # display image
         ax.hold(True)
